@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Weather Dashboard</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="weather-card">
+
+<h1>Weather Dashboard</h1>
+
+<select id="citySelect">
+<option value="">Select City</option>
+<option value="Bangalore">Bangalore</option>
+<option value="Delhi">Delhi</option>
+<option value="Mumbai">Mumbai</option>
+<option value="London">London</option>
+<option value="New York">New York</option>
+<option value="Tokyo">Tokyo</option>
+</select>
+
+<button onclick="getWeather()">Check Weather</button>
+
+<p id="loading" class="hidden">Loading weather data...</p>
+<p id="error" class="hidden"></p>
+
+<div id="weatherResult" class="hidden">
+
+<h2 id="city"></h2>
+
+<div class="weather-info">
+<div>
+<p class="label">Temperature</p>
+<p id="temp"></p>
+</div>
+
+<div>
+<p class="label">Weather</p>
+<p id="weather"></p>
+</div>
+
+<div>
+<p class="label">Humidity</p>
+<p id="humidity"></p>
+</div>
+
+<div>
+<p class="label">Wind Speed</p>
+<p id="wind"></p>
+</div>
+</div>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
