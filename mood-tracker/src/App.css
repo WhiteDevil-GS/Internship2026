@@ -1,0 +1,17 @@
+body {
+  background-color: #e8f0fe;
+  font-family: 'Roboto', sans-serif;
+}
+
+.MuiButton-root {
+  transition: transform 0.2s;
+}
+
+.MuiButton-root:hover {
+  transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
